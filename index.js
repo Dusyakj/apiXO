@@ -100,6 +100,16 @@ app.post('/click', async (req,res) => {
 
 })
 
+app.get('/reset', (req, res) => {
+    try {
+        l = reset()
+        now = 'X'
+    } catch (error) {
+        console.log(error)
+    }
+    res.send()
+})
+
 
 
 
